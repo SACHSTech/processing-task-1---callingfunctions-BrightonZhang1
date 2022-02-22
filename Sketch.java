@@ -24,12 +24,13 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
+	// Sky
+    fill(52, 223, 235);
+    rect(0, 0, 400,300);
 
-    stroke(255);
-    line(50, 125, 70, 50);  
+	// House Body
+		fill(240, 65, 65);
+		rect(200, 175, 150, 125);
   }
   
   // define other methods down here.
