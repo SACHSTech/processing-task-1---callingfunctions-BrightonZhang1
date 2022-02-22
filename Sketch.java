@@ -2,26 +2,19 @@ import processing.core.PApplet;
 
 public class Sketch extends PApplet {
 	
-	
   /**
-   * Called once at the beginning of execution, put your size all in this method
+   * A program Sketch.java that visually sketches a picture of a house on  grassy plain.
+	 * @author: B. Zhang
    */
+	
   public void settings() {
-	// put your size call here
     size(400, 400);
   }
 
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
   public void setup() {
     background(210, 255, 173);
   }
 
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
   public void draw() {
 	  
 	// Sky
@@ -31,7 +24,17 @@ public class Sketch extends PApplet {
 	// House Body
 		fill(240, 65, 65);
 		rect(200, 175, 150, 125);
+	
+	// Chimney
+		fill(91, 98, 110);
+		rect(325, 110, 25, 60);
+		
+	// Roof Body
+		fill(91, 98, 110);
+		triangle(175, 175, 375, 175, 275, 100);
+
+	// Sun
+		fill(235, 222, 52);
+		ellipse(25, 25, 100, 100);
   }
-  
-  // define other methods down here.
 }
